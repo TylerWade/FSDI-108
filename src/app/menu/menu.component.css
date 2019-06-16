@@ -1,0 +1,10 @@
+.menu{
+    background-color: darkslategray;
+    border: 1px solid #ddd;
+}
+li{
+    display: inline-block;
+    width: 150px;
+    padding: 5px 10px;
+    text-align: center;
+}

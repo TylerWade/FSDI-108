@@ -1,0 +1,61 @@
+<h2>Register new user on the system</h2>
+
+<div class="row">
+  <div class="col-md-10">
+    <!-- Create the register user form-->
+    <!--ask for:
+      - user name
+      - email
+      - password
+      - first name
+      -last name
+    -->
+
+
+
+    <form>
+      <div class="form-group row">
+        <label for="inputEmail3">User name</label>
+        <input type="text" [(ngModel)]="userModel.userName" name="userName" class="form-control" id="exampleInputUserName"
+          placeholder="User Name">
+        <small id="userName" class="form-text text-muted">Something you will remember.</small>
+      </div>
+
+      <div class="form-group row">
+        <label for="inputEmail3">Email address</label>
+        <input type="email" [(ngModel)]="userModel.email" name="email" class="form-control" id="exampleInputEmail1"
+          placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+
+      <div class="form-group row">
+        <label for="InputPassword3">Password</label>
+        <input type="password" [(ngModel)]="userModel.password" name="password" class="form-control" id="exampleInputPassword1"
+          placeholder="Password">
+      </div>
+
+      <div class="form-group row">
+        <label for="InputPassword3">Verify Password</label>
+        <input type="password" [(ngModel)]="passwordRetype" name="password" class="form-control"
+          id="exampleInputPassword2" placeholder="Password">
+      </div>
+
+      <div class="form-group row">
+        <label for="exampleInputFirstName">First name</label>
+        <input type="text" [(ngModel)]="userModel.firstName" name="first" class="form-control"
+          id="exampleInputFirstName" placeholder="First Name">
+        <small id="name" class="form-text text-muted">The name you answer too.</small>
+      </div>
+
+      <div class="form-group row">
+        <label for="exampleInputLastName">Last name</label>
+        <input type="text" [(ngModel)]="userModel.lastName" name="last" class="form-control" id="exampleInputLastName"
+          placeholder="Last Name">
+        <small id="emailHelp" class="form-text text-muted">Your sur-name.</small>
+      </div>
+
+      <button (click)="save();" type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+  </div>
+</div>
